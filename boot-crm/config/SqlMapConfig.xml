@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+<typeAliases>
+		<!-- 单个别名定义 -->
+		<!-- <typeAlias type="com.itheima.mybatis.pojo.User" alias="user"/> -->
+		<!-- 别名包扫描器(推荐使用此方式)，整个包下的类都被定义别名，别名为类名，不区分大小写-->
+		<package name="com.itheima.crm.pojo"/>
+	</typeAliases>
+	
+	<!--加载映射文件  -->
+	<mappers>
+	
+	<!-- 包扫描加载方式 -->
+	<package name="com.itheima.crm.Mapper"/>
+	</mappers> 
+</configuration>
